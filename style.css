@@ -1,0 +1,231 @@
+body {
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns items to start */
+    min-height: 100vh;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.card {
+    background-color: black;
+    border: 1px solid lightgray;
+    transition: 0.3s;
+    display: flex;
+    margin: 20px 0;
+    width: 90%;
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto; /
+}
+
+.card:hover {
+    background-color: white;
+    border: 2px solid white;
+    transition: 0.3s;
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto; /
+}
+
+.card:hover .container,
+        .card:hover h4,
+        .card:hover h2,
+        .card:hover h5 {
+            color: black; /* Change text color to black on hover */
+        }
+.container {
+    padding: 16px;
+    width: 50%;
+    text-align: left;
+}
+.card img {
+    width: 50%;
+    object-fit: cover;
+}
+.navbar {
+    position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: left;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link, .nav-link-a {
+    font-weight: bold;
+    text-decoration: none;
+    color: gray;
+    font-family: 'Space Mono', monospace;
+    transition: color 0.3s;
+}
+
+.nav-link-a {
+    color: white;
+    text-decoration-line: overline;
+}
+
+.nav-link:hover {
+    color: lightgray;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Offset for the fixed navbar */
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensures flex children stack */
+}
+
+#typed-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+#typed-text3 {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    white-space: pre-wrap; /* Preserves line breaks */
+}
+
+#typed-text2 {
+    font-size: 1rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #typed-text {
+        font-size: 1rem;
+    }
+
+    #typed-text2 {
+        font-size: .8rem;
+    }
+
+    #typed-text3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #typed-text {
+        font-size: 0.9rem;
+    }
+
+    #typed-text2 {
+        font-size: 0.7rem;
+    }
+
+    #typed-text3 {
+        font-size: 1rem;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+}
+
+h2 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+}
+h3 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+}
+h4 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+}
+
+h5 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: black;
+    width: 1ch;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.tree-item {
+    display: block; /* Makes each tree item a block element to apply centering */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    margin: 0px 0; /* Adds vertical spacing between items */
+}
+
+.download-link {
+    left: 20px; /* Distance from the left edge */
+    color: white; /* Text color */
+}
+
+iframe {
+    display: block;
+    border: none;
+    margin: 20px 0;
+    width: 90%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
